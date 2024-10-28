@@ -1,0 +1,13 @@
+function isPalindrome(x) {
+  // 如果 x 是負數，直接回傳 false
+  if (x < 0) return false;
+
+  // 把數字轉成字串
+  let str = x.toString();
+
+  // 將字串按每個字元分割，再把字串反轉，變回一個字元字串
+  let reversedStr = str.split('').reverse().join('');
+
+  // 檢查反轉後的字串是否和原來的字串一樣
+  return str === reversedStr;
+}

@@ -1,0 +1,28 @@
+; 什麼是 Map？
+; 可以把 Map 想像成一本「字典」，每一個「單字」(鍵) 都對應著一個「解釋」(值)。例如：
+
+; 如果有一個 Map，裡面存放了字母和數字的對應關係：
+; A 對應 1
+; B 對應 2
+; C 對應 3
+
+; 什麼是 HashMap？
+; HashMap 是 Map 的一種具體實現（就像我們真的去買到的一本字典），可以幫助我們把「鍵值對」實際地存入記憶體，讓我們快速查找、更新或刪除數據。
+
+; 以下是 HashMap 的特點：
+
+; 它使用「哈希表」來實現，所以查找速度很快。
+; 在 HashMap 中，鍵和值可以是任何類型（例如字符、數字或字串），但每個鍵都是唯一的（不能有重複的鍵）。
+; HashMap 不保證資料的順序，所以插入資料的順序和取出來的順序不一定相同。
+
+
+; example
+
+Map<Character, Integer> m = new HashMap<>();
+m.put('A', 1);
+m.put('B', 2);
+System.out.println(m.get('A')); // 印出 1
+
+; Map<Character, Integer> m = new HashMap<>();：這行建立了一個 HashMap，用來存放字母和數字的對應關係。
+; m.put('A', 1);：將鍵 A 和值 1 存入 m。
+; System.out.println(m.get('A'));：使用鍵 A 來查找對應的值，印出結果 1。
